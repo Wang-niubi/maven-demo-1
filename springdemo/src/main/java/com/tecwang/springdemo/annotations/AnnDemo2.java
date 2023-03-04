@@ -92,5 +92,4 @@ public class AnnDemo2<@Ann11("用在了类变量类型V1上") @Ann11_0(1) V1, @A
             }
         }
     }
-
 }
