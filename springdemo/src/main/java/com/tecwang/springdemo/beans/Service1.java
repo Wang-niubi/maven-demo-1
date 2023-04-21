@@ -1,12 +1,13 @@
 package com.tecwang.springdemo.beans;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+//import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class Service1{
 
     String name ;
-    
+
 
     public static void main(String[] args) {
         // 测试 spring bean标签和容器
@@ -23,7 +24,7 @@ public class Service1{
         // 最终输出
         //xiaoming  小红，在单例的情况下你的 bean 一定不能随便进行修改。
 
-        
+
     }
 
 
