@@ -1,9 +1,12 @@
 package com.tecwang.springdemo.kafka;
 
 import org.apache.kafka.clients.producer.*;
+import org.apache.lucene.util.ArrayUtil;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
 
 import java.security.Provider;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Properties;
 import java.util.concurrent.ExecutionException;
 
@@ -96,7 +99,12 @@ public class KafkaTest {
         Producer<K, V> producer = new KafkaProducer<>(kafkaProperties);
         RecordMetadata recordMetadata = producer.send(record).get();
         producer.close();
-
+        // 将ArrayList转换为数组
+        ArrayList<Integer> integers = new ArrayList<>();
+        integers.add(1);
+        integers.add(2);
+        // 将ArrayList转换为数组
+        int[] arr= integers.stream().mapToInt(Integer::valueOf).toArray();
         return recordMetadata;
     }
 
