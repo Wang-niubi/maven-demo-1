@@ -35,3 +35,5 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+springdemo/src/main/resources/application.properties
