@@ -9,10 +9,10 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class ZKConfig {
-    @Autowired
+//    @Autowired
     WrapperZK wrapperZK;
 
-    @Bean(initMethod = "start")
+//    @Bean(initMethod = "start")
     CuratorFramework curatorFramework() {
         return CuratorFrameworkFactory.newClient(
                 wrapperZK.getConnectString(),
