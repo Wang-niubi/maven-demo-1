@@ -31,3 +31,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+#config
+springdemo/src/main/resources/application.properties

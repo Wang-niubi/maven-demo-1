@@ -14,7 +14,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 public class SpringDemoApplication {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext run = SpringApplication.run(SpringDemoApplication.class);
+        SpringApplication.run(SpringDemoApplication.class);
 
     }
 
